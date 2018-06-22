@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<info xmlns:xsi= "http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
+    <id>admin_resource_booking_database</id>
+    <name>Admin Resource Booking Management</name>
+    <summary>Database backend for CalDAV resource and room booking</summary>
+    <description><![CDATA[Database backend for CalDAV resource and room booking]]></description>
+    <version>0.0.1</version>
+    <licence>agpl</licence>
+    <author mail="oc.list@georgehrke.com" >Georg Ehrke</author>
+    <namespace>AdminResourceBookingDatabase</namespace>
+    <category>office</category>
+    <category>organization</category>
+    <bugs>https://github.com/nextcloud/admin_resource_booking_management</bugs>
+    <dependencies>
+        <nextcloud min-version="14" max-version="14"/>
+    </dependencies>
+    <settings>
+        <admin>OCA\AdminResourceBookingDatabase\Settings\ResourceBooking</admin>
+        <admin-section>OCA\AdminResourceBookingDatabase\Settings\ResourceBookingSection</admin-section>
+    </settings>
+</info>

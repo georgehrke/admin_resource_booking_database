@@ -1,0 +1,27 @@
+#admin_resource_booking_database #resource_list,
+#admin_resource_booking_database #room_list {
+	display: grid;
+	grid-auto-columns: 1fr;
+	grid-auto-rows: 46px;
+	grid-column-gap: 20px;
+}
+
+#admin_resource_booking_database #resource_list .row,
+#admin_resource_booking_database #room_list .row {
+	display: grid;
+	grid-row-start: span 1;
+	grid-gap: 3px;
+	align-items: center;
+	grid-auto-columns: min-content;
+	border-top: #ebebeb 1px solid;
+}
+
+#admin_resource_booking_database #resource_list .row > div,
+#admin_resource_booking_database #room_list .row > div {
+	grid-row: 1;
+	display: inline-flex;
+	align-items: center;
+	color: #545454;
+	position: relative;
+	width: 150px;
+}
